@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Yuvatma</title>
+</head>
+<body>
+    <div id="Heading">
+        Sri Jagadguru Madhwacharya Moola Maha Samstanam Sri Uttaradi Math
+    </div>
+    <div class="navbar">
+        <a style="text-decoration: none;" href="https://yuvatma.com/" target="_blank">
+            <div class="items" id="logo">Yuvatma</div>
+        </a>
+        <a style="text-decoration: none;" href="https://yuvatma.com/" target="_blank">
+            <div class="items" id="navcontents1">Home</div>
+        </a>
+        <a style="text-decoration: none;" href="https://yuvatma.com/#events" target="_blank">
+            <div class="items" id="navcontents">Events</div>
+        </a>
+        <!-- <div class="items" id="navcontents">About</div>
+        <div class="items" id="navcontents">Contact Us</div> -->
+    </div>
+    <div class="guru">
+        -ll Shri Gurubhyo Namaha ll-
+    </div>
+    <div class="main">
+        <img class="designn" src="images/design2.png" alt="">
+        <img class="design" src="images/design2.png" alt="">
+        <div class="title">
+            <img class="arrow-left" src="images/arrows.png" alt="">
+            <a>Parayana for Loka Kalyana</a>
+            <img class="arrow-right" src="images/arrows.png" alt="">
+        </div>
+        <img class="underline" src="images/underline.png" alt="">
+        <!-- <div class="registerhead">
+            Registration Form
+        </div> -->
+
+
+        <!-- Form Code Below -->
+
+        <div class="form-wrapper sign-in">
+            <form name="submit-to-google-sheet" action="">
+                <div class="registerhead">
+                    Registration Form
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Name" required>
+                    <label for="">Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" name="Number" required>
+                    <label for="">Phone Number</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" name="Alt-Number" required>
+                    <label for="">Alternate Phone No.</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Gotra" required>
+                    <label for="">Gotra</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Address" required>
+                    <label for="">Address</label>
+                </div>
+
+                <button type="submit">Register Now</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="gradient-line"></div>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwmJYtJeFFSRH3hFq_2T-wqvHrNNqzmbT5Pek9vDru0fUsmWNbkC63a9IVKPyBOpG1A/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>

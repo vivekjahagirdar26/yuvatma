@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'batangas';
+    src: url(fonts/Batangas\ Bold\ 700.otf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Swash';
+    src: url(fonts/BerkshireSwash-Regular.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(86,5,107,1) 0%, rgba(164,32,85,1) 100%);
+}
+
+#Heading {
+    width: 100%;
+    height: 50px;
+    font-family: 'batangas';
+    color: #faf5ac;
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+    background: rgb(4,74,173);
+    background: linear-gradient(90deg, rgba(4,74,173,1) 0%, rgba(203,110,198,1) 100%);
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: rgb(255,247,173);
+    background: linear-gradient(90deg, rgba(255,247,173,1) 0%, rgba(255,169,249,1) 100%);
+}
+
+.guru {
+    font-size: 18px;
+    font-family: 'batangas';
+    color: #faf5ac;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.title {
+    display: inline;
+    align-items: center;
+    margin-top: 0px;
+    font-family: 'Swash';
+    font-size: 34px;
+    align-content: center;
+    text-align: center;
+    color: #faf5ac;
+    width: 100%;
+    height: 50px;
+}
+
+.formhead {
+    font-size: 32px;
+    font-family: 'Swash';
+    color: #faf5ac;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.items {
+    display: inline;
+    color: #c22c77;
+    cursor: pointer;
+}
+
+#logo {
+    font-size: 38px;
+    font-family: 'Swash';
+    align-content: center;
+    padding-left: 3%;
+}
+
+#navcontents {
+    font-size: 20px;
+    font-family: 'batangas';
+    align-content: center;
+    padding-left: 25px;
+}
+
+#navcontents1 {
+    font-size: 20px;
+    font-family: 'batangas';
+    align-content: center;
+    margin-left: 65%;
+}
+
+.main {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.design {
+    height: 2.8rem;
+    width: 18rem;
+    opacity: 80%;
+}
+.designn {
+    padding-bottom: 0px;
+    transform: scaleY(-1); 
+    height: 2.8rem;
+    width: 18rem;
+    opacity: 80%;
+}
+
+.arrow-left {
+    height: 32px;
+    width: 192px;
+}
+
+.arrow-right {
+    transform: scaleX(-1);
+    height: 32px;
+    width: 192px;
+}
+
+.registerhead {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    font-size: 32px;
+    font-family: 'Swash';
+    color: #faf5ac;
+}
+
+.underline {
+    height: 2rem;
+    width: 16rem;
+}
+/* ------- Registration Form ---------- */
+
+.form-wrapper {
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    background: rgba(194, 44, 119, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(255,255,255,0.25);
+    padding: 0 40px 20px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.input-group {
+    position:relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #ffde59;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-family: 'batangas';
+    pointer-events: none;
+    color: #faf5ac;
+    transition: 0.5s;
+}
+
+.input-group input {
+    width: 380px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'batangas';
+    color:#fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -5px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90deg, rgba(141,44,145,1) 0%, rgba(239,82,156,1) 100%);
+    font-family: 'batangas';
+    color: #faf5ac;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    border: none;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(255,102,196,1), rgba(255,222,89,1));
+    z-index: -1;
+}
+
+.gradient-line {
+    height: 3.2px; /* Set the line thickness */
+    background: rgb(255,102,196);
+    background: linear-gradient(90deg, rgba(255,102,196,1) 0%, rgba(255,222,89,1) 100%);
+    border: none;
+    margin: 20px 0; /* Add some spacing */
+}
+
+/* ------------- For Mobile Devices -------------------- */
+@media only screen and (max-width: 600px) {
+    #Heading {
+        width: 100%;
+        height: 40px;
+        font-family: 'batangas';
+        color: #faf5ac;
+        font-size: 10px;
+        align-content: center;
+        text-align: center;
+        background: rgb(4,74,173);
+        background: linear-gradient(90deg, rgba(4,74,173,1) 0%, rgba(203,110,198,1) 100%);
+
+    }
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background: rgb(255,247,173);
+        background: linear-gradient(90deg, rgba(255,247,173,1) 0%, rgba(255,169,249,1) 100%);
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 24px;
+        font-family: 'Swash';
+        padding-left: 8%;
+    }
+
+    .items {
+        display: inline;
+        color: #c22c77;
+        cursor: pointer;
+    }
+
+    #navcontents {
+        font-size: 14px;
+        font-family: 'batangas';
+        padding-left: 25px;
+    }
+    
+    #navcontents1 {
+        font-size: 14px;
+        font-family: 'batangas';
+        margin-left: 120px;
+    }
+
+    .guru {
+        font-size: 14px;
+        font-family: 'batangas';
+        color: #faf5ac;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .design {
+        height: 1.5rem;
+        width: 10rem;
+        opacity: 80%;
+    }
+    .designn {
+        padding-bottom: 0px;
+        transform: scaleY(-1); 
+        height: 1.5rem;
+        width: 10rem;
+        opacity: 80%;
+    }
+
+    .arrow-left {
+        height: 10px;
+        width: 50px;
+    }
+    
+    .arrow-right {
+        transform: scaleX(-1);
+        height: 10px;
+        width: 50px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .underline {
+        height: 1rem;
+        width: 10rem;
+    }
+
+    .form-wrapper {
+        width: 250px;
+    }
+
+    .registerhead {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        width: 235px;
+    }
+}
